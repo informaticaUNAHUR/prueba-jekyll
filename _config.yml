@@ -1,24 +1,23 @@
-title: Materias de Informática
+title: Informática UNAHUR
 description: descripción
 
 lang: es-AR
+branch: master
 
 # Pages to include in header navigation
 nav_pages:
   - index.html
-  - talks.md
-  - press.md
   - about.md
-  - contact.md
 
-# Pages to include in footer navigation
 footer_pages:
-  - books.md
   - fine-print.md
 
 # Disqus login information, for comments
 disqus:
   shortname: DISQUS_USERNAME
+
+# Google Analytics tracking id
+ga_username: UA-xxxxxxxx-x
 
 # Links to include on the contact page
 contact_links:
@@ -46,9 +45,19 @@ defaults:
       layout: page
       comments: false
 
-# Plugins
+remote_theme: benbalter/retlab
+
 plugins:
   - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-github-metadata
   - jekyll-feed
+  - jekyll-include-cache
+
+exclude:
+  - vendor/bundle
+  - node_modules
+  - js
+  - sass
+
+theme: null
